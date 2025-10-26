@@ -1,7 +1,5 @@
 .teste {
-    margin-top: 10%;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin: 10% 7% 0 7%;
 }
 
 .teste a {
@@ -14,6 +12,7 @@
     height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    display: block;
 }
 
 .teste div {
@@ -51,34 +50,39 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* Justifica espaçamento entre colunas, se quiser que alinhe com bordas: */
     justify-content: space-between;
 }
 
 .card-wrapper {
-    flex: 1 1 calc(25% - 20px);
-    /* 4 colunas: cada card ocupa 25% menos o gap dividido */
+    flex: 1 1 calc(25% - 20px); /* 4 colunas */
     display: flex;
+    flex-direction: column;
 }
 
-/* Ajustes responsivos */
+/* ===== Responsividade ===== */
 @media (max-width: 991px) {
     .card-wrapper {
-        flex: 1 1 calc(33.333% - 20px);
-        /* 3 por linha */
+        flex: 1 1 calc(33.333% - 20px); /* 3 colunas */
     }
 }
 
 @media (max-width: 767px) {
     .card-wrapper {
-        flex: 1 1 calc(50% - 20px);
-        /* 2 por linha */
+        flex: 1 1 calc(50% - 20px); /* 2 colunas */
     }
 }
 
 @media (max-width: 576px) {
     .card-wrapper {
-        flex: 1 1 100%;
-        /* 1 por linha */
+        flex: 1 1 100%; /* 1 coluna */
+    }
+
+    .teste {
+        margin: 5% 3% 0 3%; /* margens menores para mobile */
+    }
+
+    .cardDiv h5,
+    .cardDiv p {
+        padding: 0 10px;
     }
 }
