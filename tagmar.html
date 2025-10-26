@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagmar</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tdsSistemas.css">
+    <link href="https://fonts.cdnfonts.com/css/vecna" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/long-beach" rel="stylesheet">
+    <link rel="stylesheet" href="css/ordem.css">
+
+    <style>
+        /* Correção da imagem principal */
+        .div1 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        /* Mantém o fundo configurado */
+        .conteudo {
+            position: relative;
+            padding: 20px;
+        }
+
+        .conteudo p::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(img/fundos/fundoTagmar.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .conteudo p * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Foco visível para teclado */
+        p:focus {
+            outline: 2px solid #00ffff;
+            background-color: rgba(0, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="body">
+
+    <!-- Cabeçalho acessível -->
+    <header role="banner" aria-label="Cabeçalho do site ">
+        <a href="index.html" aria-label="Ir para a página inicial">
+            <img src="img/Papo de mestre.png" alt="Logo do site Papo de Mestre" class="img-fluid" />
+        </a>
+
+        <nav role="navigation" aria-label="Navegação principal">
+            <a href="index.html" aria-label="Ir para a página inicial" tabindex="0">▲ Home</a>
+            <a href="TdsSistemas.html" aria-label="Ver todos os sistemas" tabindex="0">☆ Todos os sistemas</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main role="main" style="min-height: 100vh;" aria-labelledby="tituloPrincipal">
+        <div class="div1">
+
+            <img src="img/capas/tagmar.png" alt="Capa ilustrativa do sistema Tagmar" class="img-fluid" />
+
+            <article class="conteudo" role="article">
+                <h2 id="tituloPrincipal">Tagmar</h2>
+
+                <p tabindex="0">
+                    <strong>Criador:</strong> Marcelo Rodrigues, Ygor Moraes Esteves da Silva, Júlio Augusto Cezar Junior e Leonardo Nahoum |
+                    <strong>Data de lançamento:</strong> 21 dezembro de 1991 |
+                    <strong>Ambientação:</strong> Alta fantasia
+                </p>
+
+                <p tabindex="0"><strong>Dado usado:</strong> D20 e D10</p>
+
+                <section aria-labelledby="resumoTitulo">
+                    <h3 id="resumoTitulo">Resumo</h3>
+                    <p tabindex="0">
+                        O jogo se passa em um mundo de fantasia medieval, repleto de aventuras, mistérios e desafios. Com um sistema próprio, Tagmar permite que jogadores criem personagens únicos e vivam histórias envolventes, explorando reinos, enfrentando criaturas e desvendando segredos antigos.
+                    </p>
+                </section>
+
+                <section aria-labelledby="ambientacaoTitulo">
+                    <h3 id="ambientacaoTitulo">Ambientação</h3>
+                    <p tabindex="0">
+                        Tagmar é um RPG brasileiro de alta fantasia, criado em 1991, sendo o primeiro RPG desenvolvido por brasileiros e lançado no Brasil. Inspirado em obras como O Senhor dos Anéis de J.R.R. Tolkien e na mitologia grega, o cenário apresenta um mundo medieval rico em história, magia e conflitos épicos. A ambientação é detalhada, com diversos reinos, culturas, religiões e criaturas fantásticas, proporcionando um ambiente imersivo para aventuras de fantasia clássica.
+                    </p>
+                </section>
+
+                <section aria-labelledby="estiloTitulo">
+                    <h3 id="estiloTitulo">Estilo de jogo</h3>
+                    <p tabindex="0">
+                        O estilo de jogo é focado em exploração, combate tático e desenvolvimento de personagens, com ênfase em narrativas épicas e heroicas.
+                    </p>
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Rodapé acessível -->
+    <footer role="contentinfo" aria-label="Rodapé do site">
+        <p tabindex="0">
+            Entre em contato para adicionar seu próprio sistema, saber mais sobre o site ou enviar sugestões.
+        </p>
+
+        <p tabindex="0">
+            📧 <strong>Contato:</strong>
+            <a href="mailto:oooliveira.2008@gmail.com" style="color: #fff; text-decoration: underline;" aria-label="Enviar um email para ooooliveira.2008@gmail.com">oooliveira.2008@gmail.com</a>
+            💬 <strong>Discord:</strong>
+            <a href="#" style="color: #fff; text-decoration: underline;" aria-label="Converse no Discord">@oliv_flwrs</a>
+        </p>
+
+        <p tabindex="0">
+            © 2025 <strong>Papo de Mestre</strong>. Todos os direitos reservados.
+            <a href="#" style="color: #fff; text-decoration: underline;" aria-label="Ver Política de Privacidade">Política de Privacidade</a> |
+            <a href="#" style="color: #fff; text-decoration: underline;" aria-label="Ver Termos de Uso">Termos de Uso</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mojubá</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tdsSistemas.css">
+        <link href="https://fonts.cdnfonts.com/css/vecna" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link href="https://fonts.cdnfonts.com/css/long-beach" rel="stylesheet">
+        <link rel="stylesheet" href="css/ordem.css">
+
+        <style>
+        /* Correção da imagem principal */
+        .div1 img {
+            max-width: 30%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        /* Mantém o fundo configurado */
+        .conteudo {
+            position: relative;
+            padding: 20px;
+        }
+
+        .conteudo p::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(img/fundos/fundoMojuba.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .conteudo p * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Foco visível para teclado */
+        p:focus {
+            outline: 2px solid #00ffff;
+            background-color: rgba(0, 255, 255, 0.1);
+        }
+    </style>
+    </head>
+    <body class="body">
+
+        <header role="banner" aria-label="Cabeçalho principal">
+            <a href="index.html"
+                aria-label="Ir para a página inicial, mas pela logo">
+                <img src="img/Papo de mestre.png"
+                    alt="Logo do site Papo de Mestre" class="img-fluid" />
+            </a>
+
+            <nav role="navigation" aria-label="Navegação principal">
+                <a href="index.html" aria-label="Ir para a página inicial">▲
+                    Home</a>
+                <a href="TdsSistemas.html" aria-label="Ver todos os sistemas">☆
+                    Todos os sistemas</a>
+            </nav>
+        </header>
+
+        <main style="min-height: 100vh;">
+
+            <div class="div1">
+                <img src="img/capas/mojuba.png" alt class="img-fluid">
+
+                <article class="conteudo" role="article">
+                    <h2 id="tituloPrincipal">Mojubá</h2>
+
+                    <p tabindex="0">
+                        <strong>Criador:</strong> Lucas Conti e Lucas Sampaio |
+                        <strong>Data de lançamento:</strong> 5 setembro 2023 |
+                        <strong>Ambientação:</strong> Afrofuturista de fantasia
+                        urbana
+                    </p>
+
+                    <p tabindex="0"><strong>Dado usado:</strong> D6</p>
+
+                    <section aria-labelledby="resumoTitulo">
+                        <h3 id="resumoTitulo">Resumo</h3>
+                        <p tabindex="0">
+                            Mojubá é para cima, para os lados e para baixo. É o
+                            fundo do rio e o limite do
+                            céu. Mais do que uma cidade, Mojubá é uma ideia, um
+                            local construído pelos Ancestrais, onde o nosso povo
+                            pode viver livre. Aqui, Mandinga, Tecnologia e
+                            Natureza encontram harmonia: árvores se fundem com
+                            arranha-céus e a energia espiritual abastece
+                            maravilhas tecnológicasque dividem espaço com seres
+                            tão antigos quanto o próprio tempo. É uma cidade de
+                            caminhos metálicos, orixás poderosos, pessoas
+                            coloridas, segredos antigos e espíritos perigosos.
+                            Em Mojubá existe sempre algo fantástico a ser
+                            descoberto, mas também algo perigoso a ser encarado.
+                        </p>
+                    </section>
+
+                    <section aria-labelledby="ambientacaoTitulo">
+                        <h3 id="ambientacaoTitulo">Ambientação</h3>
+                        <p tabindex="0">
+                            Afrofuturismo é sobre isso no final das contas:
+                            ancestralidade, comunidade, espiritualidade. Dá para
+                            dizer que esses são os pilares que me fizeram
+                            escrever Mojubá. É também um jogo sobre fazer a
+                            coisa certa. Lutar contra injustiça, salvar os
+                            necessitados, destruir o preconceito, ajudar a
+                            construir um mundo melhor. Mojubá é sobre isso
+                        </p>
+                    </section>
+
+                    <section aria-labelledby="estiloTitulo">
+                        <h3 id="estiloTitulo">Estilo de jogo</h3>
+                        <p tabindex="0">
+                            Mojubá é um RPG de mesa afrofuturista de fantasia urbana , tomando inspirações principalmente nas mitologias Iorubás e Afro-Brasileiras. Aqui você é um Cria: Uma pessoa com poderes fantásticos que descende dos Orixás e que deve se encontrar em meio da cidade afrofuturista de Mojubá enquanto luta contra espíritos malignos, enfrenta o trânsito e ocasionalmente entra em uma batalha de rap.
+                        </p>
+                    </section>
+
+                </article>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>
+                Entre em contato para adicionar seu próprio sistema, saber
+                mais sobre o site ou enviar sugestões.
+            </p>
+
+            <p>
+                📧 Contato: <a href="mailto:oooliveira.2008@gmail.com"
+                    style="color: #fff; text-decoration: underline;">oooliveira.2008@gmail.com</a>
+                💬 Discord: <a href="#"
+                    style="color: #fff; text-decoration: underline;">@oliv_flwrs</a>
+            </p>
+            <br><br>
+            <p>© 2025 <strong>Papo de Mestre</strong>. Todos os direitos
+                reservados. <a href="#"
+                    style="color: #fff; text-decoration: underline;">Política de
+                    Privacidade</a> | <a
+                    href="#"
+                    style="color: #fff; text-decoration: underline;">Termos de
+                    Uso</a></p>
+        </footer>
+
+    </body>
+</html>

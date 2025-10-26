@@ -1,0 +1,84 @@
+.teste {
+    margin-top: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.teste a {
+    text-decoration: none;
+    color: black;
+}
+
+.teste img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.teste div {
+    min-width: auto;
+}
+
+.cardDiv {
+    background-color: rgb(255, 255, 241);
+    border-radius: 5px;
+    border: solid 1px rgb(199, 199, 199);
+    transition: transform 0.4s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDiv:hover {
+    transform: scale(1.05);
+}
+
+.cardDiv h5,
+.cardDiv p {
+    padding: 0 20px;
+}
+
+.cardDiv h5 {
+    padding-top: 15px;
+}
+
+.cardDiv p {
+    margin-bottom: 20px;
+}
+
+.grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Justifica espaçamento entre colunas, se quiser que alinhe com bordas: */
+    justify-content: space-between;
+}
+
+.card-wrapper {
+    flex: 1 1 calc(25% - 20px);
+    /* 4 colunas: cada card ocupa 25% menos o gap dividido */
+    display: flex;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 991px) {
+    .card-wrapper {
+        flex: 1 1 calc(33.333% - 20px);
+        /* 3 por linha */
+    }
+}
+
+@media (max-width: 767px) {
+    .card-wrapper {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 por linha */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-wrapper {
+        flex: 1 1 100%;
+        /* 1 por linha */
+    }
+}
