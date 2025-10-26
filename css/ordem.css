@@ -1,12 +1,13 @@
 main {
-    margin: 3% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+
 }
 
 .div1 {
     display: flex;
-    flex-wrap: wrap; 
     gap: 5%;
-    justify-content: space-between;
 }
 
 .conteudo p {
@@ -17,21 +18,34 @@ main {
     color: rgb(31, 35, 37);
     overflow: hidden;
     z-index: 0;
-    flex: 1 1 45%;
+}
+
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 1024px) {
+    .div1 > .conteudo {
+        max-width: 100%;    /* cards ocupam toda a largura */
+        flex-direction: column; /* imagem acima do texto */
+    }
+
+    .div1 > .conteudo img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
 }
 
 @media (max-width: 768px) {
     main {
-        margin: 3% 5%;
+        margin: 3% 5%; /* menos margem lateral em telas pequenas */
     }
 
-    .conteudo p {
-        flex: 1 1 100%;
+    .div1 > .conteudo p {
+        flex: 1 1 100%; /* cada parágrafo ocupa toda a largura */
     }
 
     .div1 {
-        gap: 3%;
+        gap: 3%; /* gap menor em mobile */
+        flex-direction: column; /* garante empilhamento */
     }
 }
-
-
