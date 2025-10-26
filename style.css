@@ -20,14 +20,18 @@ body {
 header {
     background-color: #4913b6;
     display: flex;
-    box-shadow: #9585a8 0px 2px 30px 1px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    box-shadow: #9585a8 0px 2px 30px 1px;
+    padding: 10px 5%;
 }
 
 header nav {
-    margin-right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 header nav a {
@@ -36,7 +40,6 @@ header nav a {
     font-size: 22px;
     color: rgb(248, 214, 149);
     font-family: 'Vecna', sans-serif;
-    margin-left: 15px;
 }
 
 header nav a:hover,
@@ -45,24 +48,20 @@ header nav a:focus {
     color: rgb(216, 149, 25);
 }
 
-header a{
-    margin-left: 3%;
-}
-
 /* ===== MAIN ===== */
 main {
     flex: 1;
+    width: 100%;
 }
 
 .banner {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .intro {
-    margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 10%;
+    margin: 2% 10%;
     max-width: 40%;
 }
 
@@ -70,10 +69,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 6%;
+    gap: 2%;
 }
 
 .imgIntro {
     margin-left: 3%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== FOOTER ===== */
@@ -82,10 +84,60 @@ footer {
     font-size: small;
     background-color: #422d6d;
     width: 100%;
-    border: none;
-    margin-top: 50px;
-    padding-top: 3%;
-    padding-bottom: 1%;
+    padding: 3% 0 1% 0;
     text-align: center;
     color: rgb(255, 255, 255);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .intro {
+        max-width: 60%;
+        margin: 2% 5%;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+    #coluna {
+        flex-direction: column;
+        margin-top: 4%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .intro {
+        max-width: 90%;
+        margin: 2% 5%;
+    }
+
+    #coluna {
+        flex-direction: column;
+        margin-top: 4%;
+        gap: 10px;
+    }
+
+    .imgIntro {
+        margin-left: 0;
+        width: 100%;
+    }
 }
